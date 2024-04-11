@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello, World!</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .message {
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+        }
+        .bar {
+            display: flex;
+            position: fixed;
+            top: 0;
+            left:center;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            padding: 10px;
+}
+        .item {
+            background-color: #ccc;
+            padding: 15px 25px;
+            margin: 0 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .item:hover {
+            background-color: #bbb;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <div class="item"><a href="{{ url_for('HSR') }}">Honkai Star rail</div>
+        <div class="item">Genshin Impact</div>
+        <div class="item">Arknights</div>
+        <div class="item">Fate grand order</div>
+        <div class="item">Blue Archive</div>
+        <button onclick="handleButtonClick()">Click me</button>
+        <script>
+            function handleButtonClick(){
+                console.log('Button clicked');
+            }
+        </script>
+      </div>
+      
+
+    <div class="message">Hello, World!</div>
+    
+</body>
+</html>
